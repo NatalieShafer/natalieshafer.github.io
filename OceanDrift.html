@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ocean Drift Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<br />
+</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li ><a href="index.html">portfolio</a></li>
+						<li ><a href="CV.html">Resume</a></li>
+						<li class="active"><a href="OceanDrift.html">Ocean Drift</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/natalieannshafer" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/NatalieShafer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Ocean Drift Project</h1>
+
+									<p>Forcasting Position Based on Ocean Currents and Wind Currents</p>
+								</header>
+								<div class="image main"><img src="images/Arrows.jpg" alt="" /></div>
+								<p> The purpose of this project is to develop an accurate drift simulator that can be used to find the most probable location of an object lost at sea given the most probable last known position of the object, the time elapsed, and the specification of the object.
+									This can be achieved by calculating the effects that ocean currents and wind has on the object when it’s adrift at sea.
+									The data surrounding the currents and wind will be selected for a period of time that we wish to simulate.
+									The current and wind data will each include a direction and magnitude from corresponding latitudes and longitudes.
+									This data is used to do vector calculations to predict the path of the object. 
+									
+
+
+								</p>
+								<p>	
+							
+
+									The application input will be the longitude and latitude of the most probable last known position of the object, the time elapsed, direction of travel, and vehicle type.
+    								The software will refer to a database with the environmental data needed by the simulator, which may be provided by the user for a new simulation or referenced if the data for the case was already compiled.    
+									The output of the software will be a graphical representation of the most probable location of the drifted object. 
+									
+									
+
+
+								</p>
+
+							</section>
+
+                    <!-- Image -->
+									<h2>Functionality</h2>
+
+									<header class="major">
+									<p>
+									Here is the full application with an input area on the left and a display area on the right.
+									</p>
+									<span class="image fit"><img src="images/OceanSim.jpg" alt="" /></span>
+									</header>
+
+									<p><span class="image left"><img src="images/Ocean Drift Sim Input.JPG" alt="" /></span>
+										This part of the application handles input from the user. 
+										Objects don't need to have an intended path; the intended path is a straight path that the object was meant to take.
+										It’s helpful when predicting the location of a ship which could have lost power along that path.
+										The next input section is last known time and location of the object which is where the application will start simulating its drift.
+										The user would select the object type; the different objects drift differently based on their characteristics. 
+										There are four options; the Small Object (Person), Small Unpowered (Raft), Medium Sailboat, or Float Buoy.
+										The wind and ocean current data affect these objects differently, for example sailboats have a larger wind drag than a person would. 
+										Finally the user can input a speed to be used with a ship on an intended path.
+	
+
+										
+										
+									 </p>
+									<p><span class="image right"><img src="images/Ocean Drift Sim Output.JPG" alt="" /></span>
+
+										This side of the application displays the drift simulation of the object graphically showing the likely area of the object. 
+										The map focuses in on the area that the user indicates with the input. 
+										There are step buttons below the map to step through the simulation.
+										There is also a drop down with different time increments to step by like 15 minutes or by hours. 
+										The text area next to the step buttons displays the current time that is being displayed on the map. 
+										Next to that there is a reset button for the map. 
+										To the right side of the map there are radio buttons which determine what is displayed on the map during the simulation.
+										The first two display the vector arrows for the ocean and wind data. 
+										The third radio button displays the intended path of the object. 
+										The following two are currently nonfunctional.
+										The probability area would display color coded areas which are more probable for the object. 
+										And the search pattern would display the best path for searching for the object.</p>
+                                    
+									
+
+									<ul class="actions special">
+										<li><a href="index.html" class="button large">Portfoilo</a></li>
+									</ul>		
+                                </div>
+				<!-- Footer -->
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<br\>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
